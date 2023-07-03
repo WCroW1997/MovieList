@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="scrypt.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <a href="#" class="logo__link"><img src="./img/movie.svg" alt="icon: movie logo"> Movie List</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Головна</a></li>
+                    <li><input type="text" placeholder="Пошук" class="nav__input"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="newest">
+            <div class="container newest__container">
+                <h2 class="section__title">Популярні фільми</h2>
+                <div class="newest__cardzone cardZone">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper popular">
+                            <!-- Slides -->
+                            <!-- <div class="card swiper-slide">
+                                <img src="./img/poster.webp" alt="" class="card__img">
+                                <h3 class="card__title">Movie Title</h3>
+                                <p class="card__desc">movie desc</p>
+                            </div> -->
+
+                        </div>
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.container newest__container -->
+        </section>
+        <!-- /.newest -->
+        <section class="search">
+            <div class="container searchZone__container">
+                <div class="search__zone">
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <div class="modal">
+
+
+        </div>
+        <!-- /.searchZone -->
+    </main>
+    <!-- /.main -->
+</body>
+
+</html>

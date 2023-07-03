@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #171d27;
+	color: #fff;
+}
+
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__link {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	gap: 20px;
+	font-size: 20px;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav__input {
+	padding: 10px 15px;
+	border-radius: 16px;
+	border: 2px solid #2e343d;
+	background: transparent;
+	color: #fff;
+}
+
+.newest {
+	margin-top: 30px;
+}
+
+.cardZone {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	overflow-x: hidden;
+}
+
+.card {
+	flex-basis: 18%;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.card__img {
+	width: 100%;
+}
+
+.card__title {
+	margin-top: 10px;
+}
+
+.card__label {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border: 2px solid black;
+	background: #2e343d;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__label_red {
+	border-color: red;
+}
+
+.card__label_yellow {
+	border-color: yellow;
+}
+
+.card__label_green {
+	border-color: green;
+}
+
+.search__zone {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.card__search {
+	flex-basis: 22%;
+}
+
+.modal {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	width: 90vw;
+	height: 90vh;
+	z-index: 99;
+	background: #17161b;
+	padding: 30px;
+	border-radius: 8px;
+	border: 1px solid white;
+	display: none;
+	gap: 30px;
+}
+
+.modal__img {
+	flex-basis: 30%;
+}
+
+.movie__poster {
+	width: 100%;
+}
+
+.modal__info {
+	flex-basis: 55%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.movie__ganre {
+	padding: 10px 15px;
+	border: 1px solid white;
+	border-radius: 32px;
+}
+
+.btn {
+	align-self: start;
+	padding: 10px 15px;
+	border-radius: 32px;
+	background: #2e343d;
+	color: white;
+	border: 1px solid white;
+}
